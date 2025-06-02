@@ -1,124 +1,79 @@
-<!-- index.html --><!DOCTYPE html><html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Study Sphere</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chemistry Study Hub</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fdf6ec;
-      color: #3e2f1c;
-    }
-    header {
-      background-color: #5a3e36;
-      padding: 20px;
-      color: #fff;
+      background-image: url('https://images.unsplash.com/photo-1604668843076-df63cdcfeb1b');
+      background-size: cover;
+      background-position: center;
+      color: white;
       text-align: center;
     }
-    .section {
-      padding: 40px 20px;
-      text-align: center;
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 50px;
+      margin: 100px auto;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 15px;
     }
-    .subjects {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
     }
-    .subject-card {
-      background-color: #ead8c0;
-      padding: 20px;
-      border-radius: 12px;
-      width: 200px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+    p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
     }
-    .subject-card:hover {
-      transform: translateY(-10px);
+    .chapter-list {
+      list-style: none;
+      padding: 0;
     }
-    a {
-      text-decoration: none;
-      color: inherit;
+    .chapter-list li {
+      margin: 15px 0;
+      background-color: #3e3e3e;
+      padding: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .chapter-list li:hover {
+      background-color: #5a5a5a;
     }
     footer {
-      background-color: #5a3e36;
-      padding: 20px;
-      color: #fff;
-      text-align: center;
-      margin-top: 40px;
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Study Sphere</h1>
-    <p>Your Gateway to Class 11 & 12 Science Mastery</p>
-  </header>  <div class="section">
-    <h2>Select a Subject</h2>
-    <div class="subjects">
-      <a href="chemistry.html"><div class="subject-card">Chemistry</div></a>
-    </div>
-  </div>  <footer>
-    Made by You | Class 11 & 12
-  </footer>
-</body>
-</html><!-- chemistry.html --><!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chemistry</title>
-</head>
-<body>
-  <h1>Chemistry</h1>
-  <a href="chemistry-class11.html">Class 11</a><br>
-  <a href="chemistry-class12.html">Class 12</a>
-</body>
-</html><!-- chemistry-class11.html --><!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Class 11 Chemistry</title>
-</head>
-<body>
-  <h1>Class 11 Chemistry Chapters</h1>
-  <ul>
-    <li><a href="chapter1-some-basic-concepts.html">1. Some Basic Concepts of Chemistry</a></li>
-    <li><a href="chapter2-structure-of-atom.html">2. Structure of Atom</a></li>
-    <li><a href="chapter3-classification.html">3. Classification of Elements and Periodicity</a></li>
-    <li><a href="chapter4-chemical-bonding.html">4. Chemical Bonding</a></li>
-    <li><a href="chapter5-states-of-matter.html">5. States of Matter</a></li>
-    <li><a href="chapter6-thermodynamics.html">6. Thermodynamics</a></li>
-    <li><a href="chapter7-equilibrium.html">7. Equilibrium</a></li>
-    <li><a href="chapter8-redox.html">8. Redox Reactions</a></li>
-    <li><a href="chapter9-hydrogen.html">9. Hydrogen</a></li>
-    <li><a href="chapter10-the-s-block.html">10. The s-Block Element</a></li>
-    <li><a href="chapter11-some-p-block.html">11. Some p-Block Elements</a></li>
-    <li><a href="chapter12-organic.html">12. Organic Chemistry - Basic Principles</a></li>
-    <li><a href="chapter13-hydrocarbons.html">13. Hydrocarbons</a></li>
-    <li><a href="chapter14-environmental.html">14. Environmental Chemistry</a></li>
-  </ul>
-</body>
-</html><!-- Example Chapter Page: chapter1-some-basic-concepts.html --><!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Some Basic Concepts of Chemistry</title>
-</head>
-<body>
-  <h1>Chapter 1: Some Basic Concepts of Chemistry</h1>
-  <h2>Notes</h2>
-  <p>• Importance of Chemistry in daily life</p>
-  <p>• Laws of chemical combination</p>
-  <p>• Dalton’s atomic theory</p>
-  <p>• Mole concept and molar mass</p>
-  <p>• Percentage composition</p>  <h2>Quiz</h2>
-  <p><strong>Q1:</strong> What is the SI unit of amount of substance?</p>
-  <ul>
-    <li>A. Kilogram</li>
-    <li><strong>B. Mole</strong></li>
-    <li>C. Gram</li>
-    <li>D. Liter</li>
-  </ul>
+  <div class="overlay">
+    <h1>Chemistry Class 11</h1>
+    <p>Explore all NCERT chapters with notes</p>
+    <ul class="chapter-list">
+      <li>1. Some Basic Concepts of Chemistry</li>
+      <li>2. Structure of Atom</li>
+      <li>3. Classification of Elements and Periodicity</li>
+      <li>4. Chemical Bonding and Molecular Structure</li>
+      <li>5. States of Matter</li>
+      <li>6. Thermodynamics</li>
+      <li>7. Equilibrium</li>
+      <li>8. Redox Reactions</li>
+      <li>9. Hydrogen</li>
+      <li>10. The s-Block Element</li>
+      <li>11. Some p-Block Elements</li>
+      <li>12. Organic Chemistry: Basic Principles</li>
+      <li>13. Hydrocarbons</li>
+      <li>14. Environmental Chemistry</li>
+    </ul>
+    <footer>
+      Made by You | Chemistry Study Hub
+    </footer>
+  </div>
 </body>
 </html>
