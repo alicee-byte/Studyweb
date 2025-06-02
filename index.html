@@ -1,189 +1,108 @@
-<!DOCTYPE html><html lang="en">
+<!-- index.html --><!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Study Hub</title>
+  <title>Study Sphere</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter&display=swap');* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f9f4ee;
-  color: #333;
-  overflow-x: hidden;
-}
-
-header {
-  background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926');
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  position: relative;
-}
-
-header::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.4);
-}
-
-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.2rem;
-  z-index: 1;
-}
-
-.section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: 2.2rem;
-  color: #6b4f4f;
-  margin-bottom: 20px;
-}
-
-.subjects {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.subject {
-  width: 300px;
-  background-color: #fffaf0;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  padding: 20px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  cursor: pointer;
-  text-align: left;
-}
-
-.subject:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.subject h3 {
-  font-size: 1.5rem;
-  color: #a17c6b;
-  margin-top: 10px;
-}
-
-.subject ul {
-  list-style: disc;
-  margin: 10px 0 0 20px;
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-.quiz {
-  margin-top: 10px;
-  background-color: #f5e6d6;
-  padding: 10px;
-  border-radius: 6px;
-  font-size: 0.85rem;
-}
-
-.testimonial-section {
-  background-color: #fffefc;
-}
-
-.footer {
-  background-color: #2c2c2c;
-  color: #eee;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.footer p {
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 1s ease-in forwards;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdf6ec;
+      color: #3e2f1c;
+    }
+    header {
+      background-color: #5a3e36;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .subjects {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .subject-card {
+      background-color: #ead8c0;
+      padding: 20px;
+      border-radius: 12px;
+      width: 200px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .subject-card:hover {
+      transform: translateY(-10px);
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    footer {
+      background-color: #5a3e36;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+      margin-top: 40px;
+    }
   </style>
 </head>
-<body>  <header>
-    <h1 class="fade-in">Elevate Your Study Life</h1>
-  </header>  <section class="section">
-    <h2 class="fade-in">Explore Your Subjects</h2>
-    <div class="subjects"><div class="subject fade-in">
-    <img src="https://img.icons8.com/ios/100/000000/physics.png" alt="Physics Icon" width="60"/>
-    <h3>Physics</h3>
-    <ul>
-      <li>Motion in a Straight Line</li>
-      <li>Laws of Motion</li>
-      <li>Work, Energy and Power</li>
-      <li>Waves & Oscillations</li>
-    </ul>
-    <div class="quiz">
-      🔹 Key Point: Energy is conserved in all isolated systems.<br>
-      🧠 Quiz: What is the unit of Power?
+<body>
+  <header>
+    <h1>Study Sphere</h1>
+    <p>Your Gateway to Class 11 & 12 Science Mastery</p>
+  </header>  <div class="section">
+    <h2>Select a Subject</h2>
+    <div class="subjects">
+      <a href="#physics"><div class="subject-card">Physics</div></a>
+      <a href="#chemistry"><div class="subject-card">Chemistry</div></a>
+      <a href="#biology"><div class="subject-card">Biology</div></a>
     </div>
+  </div>  <footer>
+    Made with ❤️ by You | Class 11 & 12
+  </footer><!-- physics.html --><section id="physics" class="section">
+  <h2>Physics</h2>
+  <div class="subjects">
+    <a href="#physics-class11"><div class="subject-card">Class 11</div></a>
+    <a href="#physics-class12"><div class="subject-card">Class 12</div></a>
   </div>
-
-  <div class="subject fade-in" style="animation-delay: 0.2s;">
-    <img src="https://img.icons8.com/ios/100/000000/chemical-plant.png" alt="Chemistry Icon" width="60"/>
-    <h3>Chemistry</h3>
-    <ul>
-      <li>Structure of Atom</li>
-      <li>Periodic Table</li>
-      <li>Chemical Bonding</li>
-      <li>Thermodynamics</li>
-    </ul>
-    <div class="quiz">
-      🔹 Key Point: Enthalpy is a state function.<br>
-      🧠 Quiz: Who proposed the modern periodic law?
-    </div>
+</section><!-- physics-class11.html --><section id="physics-class11" class="section">
+  <h2>Class 11 Physics Chapters</h2>
+  <div class="subjects">
+    <a href="#motion"><div class="subject-card">Motion</div></a>
+    <a href="#laws"><div class="subject-card">Laws of Motion</div></a>
+    <a href="#gravitation"><div class="subject-card">Gravitation</div></a>
   </div>
-
-  <div class="subject fade-in" style="animation-delay: 0.4s;">
-    <img src="https://img.icons8.com/ios/100/000000/microscope.png" alt="Biology Icon" width="60"/>
-    <h3>Biology</h3>
-    <ul>
-      <li>Cell: The Unit of Life</li>
-      <li>Biomolecules</li>
-      <li>Plant Physiology</li>
-      <li>Human Physiology</li>
-    </ul>
-    <div class="quiz">
-      🔹 Key Point: Ribosomes are the site of protein synthesis.<br>
-      🧠 Quiz: What is the basic unit of life?
-    </div>
-  </div>
-
-</div>
-
-  </section>  <section class="section testimonial-section">
-    <h2 class="fade-in">What Students Say</h2>
-    <p class="fade-in" style="max-width: 700px; margin: 0 auto;">“This site helps me stay on track with all subjects. It’s clean, focused, and beautiful.” – Ananya</p>
-  </section>  <footer class="footer">
-    <p>&copy; 2025 My Study Hub — Designed with peace and purpose 🌿<br>
-    Contact: mystudy@example.com</p>
-  </footer></body>
+</section><!-- chapter-physics-motion.html --><section id="motion" class="section">
+  <h2>Motion - Notes</h2>
+  <p><strong>Displacement:</strong> Change in position.</p>
+  <p><strong>Velocity:</strong> Speed with direction.</p>
+  <p><strong>Acceleration:</strong> Rate of change of velocity.</p>
+  <h3>Key Points</h3>
+  <ul>
+    <li>Uniform motion: Constant velocity</li>
+    <li>Non-uniform motion: Variable velocity</li>
+    <li>Equations of motion: v = u + at, s = ut + ½at², v² = u² + 2as</li>
+  </ul>  <h3>Quick Quiz</h3>
+  <p>Q1. What is the SI unit of velocity?</p>
+  <ul>
+    <li>A. m/s</li>
+    <li>B. km/h</li>
+    <li>C. m</li>
+    <li>D. s</li>
+  </ul>
+</section><!-- quiz-template.html --><section id="quiz-template" class="section">
+  <h2>Quiz Format</h2>
+  <p>Q1. Sample question goes here?</p>
+  <ul>
+    <li>A. Option 1</li>
+    <li>B. Option 2</li>
+    <li>C. Option 3</li>
+    <li>D. Option 4</li>
+  </ul>
+</section>
+</body>
 </html>
