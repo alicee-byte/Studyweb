@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Class 12 PCB Study Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📘 Class 12 PCB Study Hub</h1>
+    <nav>
+      <a href="#physics">Physics</a>
+      <a href="#chemistry">Chemistry</a>
+      <a href="#biology">Biology</a>
+    </nav>
+  </header>
+
+  <section id="physics">
+    <h2>📐 Physics Notes</h2>
+    <ul>
+      <li><a href="#">Chapter 1: Electrostatics (PDF)</a></li>
+      <li><a href="#">Chapter 2: Current Electricity (PDF)</a></li>
+    </ul>
+  </section>
+
+  <section id="chemistry">
+    <h2>⚗️ Chemistry Notes</h2>
+    <ul>
+      <li><a href="#">Chapter 1: Solid State (PDF)</a></li>
+      <li><a href="#">Chapter 2: Solutions (PDF)</a></li>
+    </ul>
+  </section>
+
+  <section id="biology">
+    <h2>🧬 Biology Notes</h2>
+    <ul>
+      <li><a href="#">Chapter 1: Reproduction in Organisms (PDF)</a></li>
+      <li><a href="#">Chapter 2: Human Reproduction (PDF)</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by [Your Name]</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
